@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardArray from '../components/CardArray';
-import {robots} from "../robots";
+import { robots } from "../robots";
 
 import './App.css';
 
