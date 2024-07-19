@@ -34,14 +34,18 @@ class App extends Component {
     return !robots.length ?
       <h1>Loading</h1> :
       (
-        <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <SearchBox searchChange={this.onSearchChange} />
-          <ErrorBoundary>
-            <Scroll>
-              <CardArray robots={filteredRobots} />
-            </Scroll>
-          </ErrorBoundary>
+        <div className='App'>
+          <header className='App-header'>
+            <h1 className='f1'>RoboFriends</h1>
+            <SearchBox searchChange={this.onSearchChange} />
+          </header>
+          <main className='App-main'>
+            <ErrorBoundary>
+              <Scroll>
+                <CardArray robots={filteredRobots} />
+              </Scroll>
+            </ErrorBoundary>
+          </main>
         </div>
       );
   }
